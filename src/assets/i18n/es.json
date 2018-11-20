@@ -1,0 +1,22 @@
+{
+  "titles": {
+    "login": "Login",
+    "forgotPassword":"Recuperar contraseña",
+    "home": "Bienvenido a su aula virtual Highland"
+  },
+  "buttons": {
+    "confirm": "Confirmar",
+    "send": "Enviar",
+    "login": "Login",
+    "cancel": "Cancelar"
+  },
+  "links": {
+    "forgotPassword": "Forgot Password?",
+    "newUser": "Crear una cuenta"
+  },
+  "messages": {
+    "validEmail": "Un mail ha sido enviado a su casilla de correo para reestablcer su contraseña.",
+    "invalidEmail": "El email ingresado no corresponde a un usuario válido."
+  }
+
+}

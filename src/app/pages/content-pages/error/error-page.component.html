@@ -1,0 +1,43 @@
+<!--Error page starts-->
+<section id="error">
+    <div class="container-fluid bg-grey bg-lighten-3">
+        <div class="container">
+            <div class="row full-height-vh">
+                <div class="col-md-12 col-lg-3 ml-auto d-flex align-items-center">
+                    <div class="row text-center mb-3">
+                        <div class="col-12">
+                            <img src="assets/img/logo2.png" alt="User"  >
+                        </div>
+                        <div class="col-12">
+                            <h4 class="grey darken-2 font-large-5">Opps...</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-8 d-flex align-items-center justify-content-center">
+                    <div class="error-container">
+                        <div class="no-border">
+                            <div class="text-center text-bold-700 grey darken-2 mt-5" style="font-size: 11rem; margin-bottom: 4rem;">404</div>
+                        </div>
+                        <div class="error-body">
+                            <div class="row py-2 justify-content-center">
+                                <div class="col-8">
+                                    <a class="btn btn-brown btn-raised btn-block font-medium-2" routerLink="/home"><i class="ft-home"></i> Back to Home</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="error-footer bg-transparent">
+                            <div class="row">
+                              <p class="copyright text-center">
+                                &copy; {{currentDate | date: 'yyyy'}} <a href="http://www.ekeepoit.com">eKeepOIT</a>,
+                                anticipating the future
+                                <!--&copy;  <a>PIXINVENT</a>, made with love for a better web-->
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Error page ends-->

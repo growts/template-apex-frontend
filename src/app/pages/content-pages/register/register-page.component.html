@@ -1,0 +1,56 @@
+<!--Registration Page Starts-->
+<section id="regestration">
+    <div class="container">
+        <div class="row full-height-vh">
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <div class="card" style="background-color:#FEDD32; border-color: #FEDD32; box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.5);">
+                  <div class="card-body">
+                    <div class="col-12 col-sm-12 d-flex align-items-center">
+                      <div class="card-block mx-auto">
+                        <div class="card-img overlap text-center">
+                          <img alt="disensaImg" class="mb-1" src="../../../../assets/img/disensamain.png" style="width: 50% ">
+                        </div>
+                        <div class="text-center pt-1">
+                          <h2 style="color:white; font-weight:bold;">{{translates.register.title|translate}}</h2>
+                        </div>
+                          <form (ngSubmit)="onSubmit()" #f="ngForm">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" name="fname" id="fname" placeholder="Name" ngModel required >
+                            </div>
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" name="fuser" id="fuser" placeholder="User" ngModel required >
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" ngModel required email >
+                            </div>
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" name="inputPhone" id="inputPhone" placeholder="Phone number" ngModel required >
+                            </div>
+                            <div class="input-group mb-3">
+                              <input type="password" class="form-control" name="inputPass" id="inputPass" placeholder="Password" ngModel required >
+                            </div>
+                            <div class="input-group mb-3">
+                              <label *ngIf="error.password" class="col-12" style="color: red; margin-left: 1rem;">{{translates.register.error.password|translate}}</label>
+                              <input type="password" class="form-control" name="inputPass1" id="inputPass1" placeholder="Re entry Password" ngModel required >
+                            </div>
+                            <div class="form-group text-center col-sm-offset-1">
+                              <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                <input type="checkbox" class="custom-control-input" checked>
+                                <span class="custom-control-indicator"></span>
+                                <span class="pl-2 white">{{translates.register.terms|translate}} <a>{{translates.register.terms1|translate}}</a></span>
+                              </label>
+                            </div>
+                            <div class="form-group text-center">
+                              <button type="submit" class="btn btn-raised" style="background-color: #E63329; color: white; width: 20%;"
+                                      [disabled]="!f.valid">{{translates.register.button.send|translate}}</button>
+                            </div>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Registration Page Ends-->
