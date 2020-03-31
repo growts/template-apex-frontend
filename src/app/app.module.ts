@@ -22,6 +22,7 @@ import {StorageMemory} from "./injectables/storageMemory";
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {HttpLoaderFactory} from "./shared/config/config";
 
+// inicializa la aplicacion
 export function init_app(appLoadService: AppLoadService) {
   return () => appLoadService.initializeApp();
 }
